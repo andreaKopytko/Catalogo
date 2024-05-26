@@ -9,7 +9,6 @@
 <body>
     <h1>Welcome</h1>
     <h3>Vedi il nostro Catalogo magnifico</h3>
-    <!--
     <table>
         <tr>
             <th>Codice</th>
@@ -18,7 +17,7 @@
             <th>Anno di Produzione</th>
             <th>Quantità</th>
         </tr>
-        <tr th:each="Prodotto p : ${prodotti}">
+        <tr th:each="p : ${collezione}">
             <td th:text="*{p.code}"></td>
             <td th:text="*{p.name}"></td>
             <td th:text="*{p.type}"></td>
@@ -26,8 +25,6 @@
             <td th:text="*{p.quantity}"></td>
         </tr>
     </table>
-
-    -->
     <a class="btn btn-primary" th:href="@{/catalogo/nuovo}">Aggiungi Prodotto</a>
     <a class="btn btn-secondary" th:href="@{/catalogo}">Oblitera Catalogo</a>
 </body>

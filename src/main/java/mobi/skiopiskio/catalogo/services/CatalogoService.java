@@ -32,4 +32,15 @@ public class CatalogoService {
 
         return Optional.empty();
     }
+
+    /* 
+    Prodotto prod1 = new Prodotto("1", "Gnomo da giardino", "Arma Psicologica", 1300, 100);
+    Prodotto prod2 = new Prodotto("2", "Erba finta", "Strumento musicale", 2025, 24);
+    Prodotto prod3 = new Prodotto("3", "Birmarzio", "Fertilizzante", 2018, 90);
+
+    prodotti.addProdotto(prod1);
+    prodotti.addProdotto(prod2);
+    prodotti.addProdotto(prod3);
+
+    */
 }
