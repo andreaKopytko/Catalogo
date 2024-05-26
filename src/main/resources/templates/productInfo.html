@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <title>Prodotto Selezionato</title>
+</head>
+<body>
+    <div>
+        <h3 th:text="${prodotto.name}"></h3>
+        Codice: <span th:text="{product.code}"></span>
+        Tipo: <span th:text="{product.type}"></span>
+        Anno di produzione: <span th:text="{product.productionYear}"></span>
+        Quantità: <span th:text="{product.quantity}"></span>
+    </div>
+</body>
+</html>

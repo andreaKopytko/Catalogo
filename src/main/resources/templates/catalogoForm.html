@@ -6,6 +6,33 @@
     <title>Nuovo Prodotto</title>
 </head>
 <body>
-    
+    <div class="col-2">
+        <h2>Nuovo Prodotto</h2>
+        <form method="post" th:action="@{/catalogo/nuovo}" th:object="${Prodotto}"></form>
+        <div>
+            <label>Codice</label>
+            <input th:field="*{code}" type="text">
+        </div>
+        <div>
+            <label>Nome</label>
+            <input th:field="*{name}" type="text">
+        </div>
+        <div>
+            <label>Tipo</label>
+            <input th:field="*{type}" type="text">
+        </div>
+        <div>
+            <label>Anno di registrazione</label>
+            <input th:field="*{productionYear}" type="text">
+        </div>
+        <div>
+            <label>Quantità</label>
+            <input th:field="*{quantity}" type="text">
+        </div>
+
+            <input type="submit" value="invia">
+            <input type="reset" values="cancella"><br>
+            <a class="btn btn-primary" th:href="@{/catalogo}">Torna alla Home</a>
+    </div>
 </body>
 </html>
